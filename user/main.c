@@ -2,12 +2,6 @@
 #include "delay.h"
 #include "led.h"
 #include "usart.h"
-//#include "timer.h"
-//#include "oled.h"
-#include "moniiic.h"
-#include "1602_iic_sw.h"
-#include<math.h>
-#include<string.h>
 #include "bsp_adc.h"
 
 
@@ -19,10 +13,6 @@ u8 ph_temp=0,tu_temp=0;
 u16 ph_result=0,tu_result=0;
 u16 adc_1,adc_2;
 u16 adc_v_1,adc_v_2;
-
-//u8 ISendByte(unsigned char sla,unsigned char c);
-//u8 IRcvByte(unsigned char sla);	
-//u8 SPIx_ReadWriteByte(u8 TxData);
 
 unsigned char  Tx[20];   //ÎÞÏß·¢ËÍ»º´æ
 
@@ -55,37 +45,17 @@ void PH_Value_Conversion()
 	Tx[4]=(int)(PH_Value*100)%10+'0';
 }
 
-void Display_Data()
-{
-		//ÏÔÊ¾PHÖµ	
-	 writeOneChar(DATA ,'P');
-	 writeOneChar(DATA ,'H');
-	 writeOneChar(DATA ,':');
-	 writeOneChar(DATA ,Tx[0]);
-     writeOneChar(DATA ,Tx[1]);
-	 writeOneChar(DATA ,Tx[2]);
-	 writeOneChar(DATA ,Tx[3]);
-	 writeOneChar(DATA ,Tx[4]);
-}
+
 int main(void)
 {
 		
 	delay_init(); 
 	LED_INIT(0); 
-	init_1602(); 
-	ADCx_Init(); 
-   // OLED_Init(); 
-   // USART1_INIT();
-   // TIM3_INIT();
-   // TIM4_ENCODER(); 	
+	ADCx_Init(); 	
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2 );
 	while(1)
 	{
 		PH_Value_Conversion();	
-		setCursor(0,0);  
-	    Display_Data();
-		delay_ms(1000);
-		
 	 
 	}	 
 
@@ -93,16 +63,4 @@ int main(void)
 }
 	
 
-
-
-
-//OLED_ShowString(0,0,"SUCCEED succeed",16);			 //ÏÔÊ¾×Ö·û´®
-//		OLED_Refresh();		//Ë¢ÐÂÏÔ´æ
-//		OLED_ShowString(0,20,"SUCCEED succeed",16);			 //ÏÔÊ¾×Ö·û´®
-//		OLED_Refresh();                              //Ë¢ÐÂÏÔ´æ		
-//		OLED_ShowString(40,0,"      ",16);          //ÏÔÊ¾×Ö·û´®
-//		OLED_Refresh();						
-//	  speed = TIM4_Encode_Read(); 
-//	  delay_ms(500);
-//      printf("speed  =  %d \r\n ",speed); 
 

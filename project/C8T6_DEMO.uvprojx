@@ -409,16 +409,6 @@
               <FilePath>..\user\usart.c</FilePath>
             </File>
             <File>
-              <FileName>1602_iic_sw.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\1602_iic_sw.c</FilePath>
-            </File>
-            <File>
-              <FileName>MoNiIIC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\MoNiIIC.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_adc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\bsp_adc.c</FilePath>

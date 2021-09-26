@@ -50,7 +50,7 @@ int main(void)
 {
 		
 	delay_init(); 
-	LED_INIT(0); 
+	LED_INIT(); 
 	ADCx_Init(); 	
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2 );
 	while(1)

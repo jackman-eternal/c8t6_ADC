@@ -3,7 +3,7 @@
 
 #include "stm32f10x.h"
 
-void LED_INIT(int flag);
+void LED_INIT();
  
 
 #endif

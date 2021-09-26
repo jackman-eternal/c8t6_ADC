@@ -51,11 +51,11 @@ int main(void)
 		
 	delay_init(); 
 	LED_INIT(); 
-	ADCx_Init(); 	
+//	ADCx_Init(); 	
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2 );
 	while(1)
 	{
-		PH_Value_Conversion();	
+//		PH_Value_Conversion();	
 	 
 	}	 
 

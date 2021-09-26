@@ -1,6 +1,6 @@
 Dependencies for Project 'C8T6_DEMO', Target 'C8T6_DEMO': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\user\main.c)(0x61501684)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\cmsis -I ..\Fwlib\inc-ID:\software\keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\software\keil\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj_lis\main.o --omf_browse ..\obj_lis\main.crf --depend ..\obj_lis\main.d)
+F (..\user\main.c)(0x61501713)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\cmsis -I ..\Fwlib\inc-ID:\software\keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\software\keil\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj_lis\main.o --omf_browse ..\obj_lis\main.crf --depend ..\obj_lis\main.d)
 I (..\cmsis\stm32f10x.h)(0x4D783CB4)
 I (..\cmsis\core_cm3.h)(0x4D523B58)
 I (D:\software\keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -60,7 +60,7 @@ I (..\Fwlib\inc\stm32f10x_sdio.h)(0x4D783BB4)
 I (..\Fwlib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\Fwlib\inc\stm32f10x_usart.h)(0x504F415E)
 I (..\Fwlib\inc\misc.h)(0x4D783BB4)
-F (..\user\led.c)(0x61501684)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\cmsis -I ..\Fwlib\inc-ID:\software\keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\software\keil\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj_lis\led.o --omf_browse ..\obj_lis\led.crf --depend ..\obj_lis\led.d)
+F (..\user\led.c)(0x61501C9B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\cmsis -I ..\Fwlib\inc-ID:\software\keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\software\keil\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj_lis\led.o --omf_browse ..\obj_lis\led.crf --depend ..\obj_lis\led.d)
 I (..\user\led.h)(0x61501684)
 I (..\cmsis\stm32f10x.h)(0x4D783CB4)
 I (..\cmsis\core_cm3.h)(0x4D523B58)

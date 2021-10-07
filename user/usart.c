@@ -32,11 +32,11 @@ void USART1_INIT(void)
     GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_10 ;
     GPIO_Init(GPIOA ,&GPIO_InitStructure);
 	
-	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority =3;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority =3;
-	NVIC_InitStructure.NVIC_IRQChannelCmd =ENABLE ;
-	NVIC_Init(&NVIC_InitStructure); 
+//	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+//	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority =3;
+//	NVIC_InitStructure.NVIC_IRQChannelSubPriority =3;
+//	NVIC_InitStructure.NVIC_IRQChannelCmd =ENABLE ;
+//	NVIC_Init(&NVIC_InitStructure); 
 	
     USART_InitStructure.USART_BaudRate = 9600;
 	USART_InitStructure.USART_HardwareFlowControl =USART_HardwareFlowControl_None ;
@@ -66,12 +66,12 @@ void USART2_INIT(void)
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
     GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_3 ;
     GPIO_Init(GPIOA ,&GPIO_InitStructure);
-	
-	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority =2;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority =2;
-	NVIC_InitStructure.NVIC_IRQChannelCmd =ENABLE ;
-	NVIC_Init(&NVIC_InitStructure); 
+//	
+//	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;
+//	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority =2;
+//	NVIC_InitStructure.NVIC_IRQChannelSubPriority =2;
+//	NVIC_InitStructure.NVIC_IRQChannelCmd =ENABLE ;
+//	NVIC_Init(&NVIC_InitStructure); 
 	
     USART_InitStructure.USART_BaudRate = 9600;
 	USART_InitStructure.USART_HardwareFlowControl =USART_HardwareFlowControl_None ;
@@ -80,7 +80,7 @@ void USART2_INIT(void)
     USART_InitStructure.USART_StopBits =USART_StopBits_1 ;
     USART_InitStructure.USART_WordLength =USART_WordLength_8b;
     USART_Init(USART2,&USART_InitStructure);
-	USART_ITConfig(USART2,USART_IT_RXNE ,ENABLE  ); 
+//	USART_ITConfig(USART2,USART_IT_RXNE ,ENABLE  ); 
     USART_Cmd(USART2,ENABLE ); 	
 	
 }

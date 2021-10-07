@@ -3,7 +3,7 @@
 #include "led.h"
 #include "usart.h"
 #include "bsp_adc.h"
-
+#include "ds18b20.h"
 
 
 //unsigned char AD_CHANNEL=0;
@@ -48,9 +48,12 @@
 
 int main(void)
 {
-		
+	u8 i = 1;
 	delay_init(); 
+	USART1_INIT();
 	LED_INIT(); 
+	i = Ds18b20_Init();
+	printf("i = %d \r\n",i); 
 //	ADCx_Init(); 	
 //  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2 );
 	

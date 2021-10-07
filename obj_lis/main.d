@@ -22,3 +22,4 @@
 ..\obj_lis\main.o: ..\user\usart.h
 ..\obj_lis\main.o: D:\software\keil\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj_lis\main.o: ..\user\bsp_adc.h
+..\obj_lis\main.o: ..\user\ds18b20.h

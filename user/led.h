@@ -3,6 +3,9 @@
 
 #include "stm32f10x.h"
 
+#define LED_ON  GPIO_ResetBits(GPIOC,GPIO_Pin_13);
+#define LED_OFF GPIO_SetBits(GPIOC,GPIO_Pin_13);
+
 void LED_INIT();
  
 
